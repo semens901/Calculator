@@ -6,7 +6,9 @@
 #include <QPushButton>
 #include <QAbstractButton>
 #include <QDebug>
-
+#include<QMessageBox>
+#include<QString>
+#include<muParser.h>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -23,6 +25,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    mu::Parser calculator;
 
 private slots:
     void btn_handler();
